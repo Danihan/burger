@@ -1,0 +1,10 @@
+CREATE DATABASE burgers_db;
+
+USE burgers_db;
+
+CREATE TABLE `burgers` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(60) NOT NULL,
+	`devoured` TINYINT(1) NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
