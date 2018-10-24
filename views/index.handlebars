@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div class="row">
+    <div class="text-center">
+      {{#each burgersNotDevoured}}
+        <form action="/devour" method="POST">
+          <input type="hidden" name="id" value="{{id}}" />
+          {{name}}
+          <button name="devour">Devour it!</button>
+        </form>
+      {{/each}}
+    </div>
+
+    <div class="text-center">
+      {{#each burgersDevoured}}
+        <div>
+          <del>{{name}}</del>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+
+  <div>
+    <form class="submit" action="/insert" method="POST">
+      <input type="text" name="name" placeholder="Name of the burger" required />
+      <input type="submit" name="insert" value="Submit it!" />
+    </form>
+  </div>
+
+</div>
