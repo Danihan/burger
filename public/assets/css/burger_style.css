@@ -1,0 +1,21 @@
+.wrapper {
+  margin: 50px auto 0 auto;
+  max-width: 800px;
+}
+
+.row {
+  display: flex;
+}
+
+.row > * {
+  flex: 1 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.submit {
+  margin-top: 80px;
+  text-align: center;
+}
